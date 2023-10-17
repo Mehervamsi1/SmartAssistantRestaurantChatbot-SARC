@@ -1,4 +1,17 @@
 from flask import Flask
+from pypyodbc as odbc
+import pandas as pd
+from credential import username,password
+
+#Azure requirements
+import os
+import pyodbc, struct
+from azure import identity
+
+from typing import Union
+from fastapi import FastAPI
+from pydantic import BaseModel
+
 
 def create_app():
     app = Flask(__name__)
