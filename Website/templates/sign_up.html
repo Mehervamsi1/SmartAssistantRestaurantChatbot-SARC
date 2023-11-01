@@ -1,57 +1,80 @@
 {% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
     content %}
+
+    <style>
+      body {
+        background-image: url('https://lh3.googleusercontent.com/gB5XUNpRDfOwFok5zQ2_-nkc4oxAUjftybOHC6kNMuUZRuRBvyOG5xmYvseepSak2BfvocwalvpFPYw8MjK6437wxi2yR_Zqd9UXUayLshN_4EDhwRAN9siZP88-PEiBCgUxFOTKjwMBYIIP');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      </style>
+      <link rel="icon" type="image/x-icon" href="https://lh7-us.googleusercontent.com/TvoeRv3EjCTHRJJbLhGxLgAhIF2b-c6EOsSlTXaSONY_szS61_WracUUIxNFjMkm2u-BDkmes5lgbu5G4ezjHc1EaM_nB2e8IebisEUP1i8GKU22f9T7FaPj_yjxMALyHgtwKMnOn7FDyqCt">
+
     <form method="POST">
-      <h3 align="center">Sign Up</h3>
+      <h3 align="center" style="font-size:60px; color: white;">Sign Up</h3>
       <div class="form-group">
-        <label for="email">Email Address</label>
+        <label for="email" style="color: white;">Email Address</label>
         <input
           type="email"
           class="form-control"
           id="email"
           name="email"
           placeholder="Enter your email address"
+          
         />
       </div>
       <div class="form-group">
-        <label for="firstName">First Name</label>
+        <label for="firstName" style="color: white;">First Name</label>
         <input
           type="text"
           class="form-control"
           id="firstName"
           name="firstName"
           placeholder="Enter your first name"
+          
         />
       </div>
       <div class="form-group">
-        <label for="lastName">Last Name</label>
+        <label for="lastName" style="color: white;">Last Name</label>
         <input 
         type="text" 
         class="form-control" 
         id="lastName" 
         name="lastName" 
-        placeholder="Enter your last Name"/>
+        placeholder="Enter your last Name"
+        />
     </div>
       <div class="form-group">
-        <label for="password1">Password</label>
+        <label for="password1" style="color: white;">Password</label>
         <input
           type="password"
           class="form-control"
           id="password1"
           name="password1"
           placeholder="Enter your password"
+          
         />
       </div>
       <div class="form-group">
-        <label for="password2">Confirm Passsword</label>
+        <label for="password2" style="color: white;">Confirm Passsword</label>
         <input
           type="password"
           class="form-control"
           id="password2"
           name="password2"
           placeholder="Confirm your password"
+          
         />
       </div>
       <br />
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <br></br>
+    <div>
+      <a href="https://refactored-barnacle-6p9wj77pqxxc4p76-5000.app.github.dev/login" style="color: white; display: flex;
+      justify-content: center;
+      align-items: center; 
+      font-size: large;"> Already have an account? Login here!</a>
+    </div>
     {% endblock %}
